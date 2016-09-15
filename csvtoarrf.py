@@ -14,7 +14,7 @@ myfile = csv.reader(open(filename,'rb'))
 for line in myfile:
     #[ITEMS.add(item.strip()) for item in line]
     line2='. '.join(line)
-    [ITEMS.add(word) for word in line2.split()]
+    [ITEMS.add(word) for word in line2.split()[:-1]]
 
 
 myARFF = open(arffFilename,'w+')

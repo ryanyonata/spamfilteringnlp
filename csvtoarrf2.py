@@ -43,9 +43,12 @@ myfile = csv.reader(open(filename,'rb'))
 
 #Get List of all the unique items from the Input
 for line in myfile:
-        [ITEMS.add(item.strip()) for item in line[:-1]]
-	#Get List of all the unqiue classes
-        LABELS.add(line[-1].strip())
+        line2='. '.join(line)
+        [ITEMS.add(word) for word in line2.split()[:-1]]
+    #Get List of all the unqiue classes
+        LABELS.add(line2.rsplit(None, 1)[-1])
+
+
 
 #Open created arff file to write the data
 myARFF = open(arffFilename,'w+')
@@ -76,13 +79,15 @@ myfile = csv.reader(open(filename,'rb'))
 for line in myfile:
     tmp = []
     newLine = "{ "
-    for word in line[:-1]:
+
+    line2='. '.join(line)
+    for word in line2.split()[:-1]:
         tmp.append(ITEMS.index(word.strip()))
     for i in sorted(list(set(tmp))):
         newLine += str(i) +" "+"true"+","
 
     #Adding the class of the sample
-    newLine += str(len(ITEMS)-1) + " " + line[-1]   
+    newLine += str(len(ITEMS)-1) + " " + line2.rsplit(None, 1)[-1]
  
     writeLine = newLine
     writeLine += "}\n"
