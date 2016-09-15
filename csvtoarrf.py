@@ -12,7 +12,9 @@ myfile = csv.reader(open(filename,'rb'))
 
 #Get List of all the unique items from the Input
 for line in myfile:
-    [ITEMS.add(item.strip()) for item in line]
+    #[ITEMS.add(item.strip()) for item in line]
+    line2='. '.join(line)
+    [ITEMS.add(word) for word in line2.split()]
 
 
 myARFF = open(arffFilename,'w+')
@@ -30,7 +32,8 @@ for line in myfile:
     tmp = []
     newLine = "{ "
 	#get the index first and sort them and then loop on sorted value to add true
-    for word in line:
+    line2='. '.join(line)
+    for word in line2.split():
         tmp.append(ITEMS.index(word.strip()))
     for i in sorted(list(set(tmp))):
         newLine += str(i) +" "+"true"+","
