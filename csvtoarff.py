@@ -1,9 +1,10 @@
+
 import csv
 import pdb
 
 
 #Variable Intialization
-filename = "output.csv"
+filename = "data/processedSpamdata.csv"
 ITEMS = set()
 arffFilename = filename.split(".")[0] + ".arff"
 
