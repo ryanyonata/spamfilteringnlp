@@ -1,0 +1,142 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.SimpleCart -S 1 -M 2.0 -N 5 -C 1.0
+Relation:     Weka
+Instances:    1048
+Attributes:   5006
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CART Decision Tree
+
+_url_=(true)
+|  hadiah=(true): SPAM(110.0/0.0)
+|  hadiah!=(true)
+|  |  menang=(true): SPAM(32.0/0.0)
+|  |  menang!=(true)
+|  |  |  lebih=(false)
+|  |  |  |  paket=(false)
+|  |  |  |  |  tahu=(false)
+|  |  |  |  |  |  d=(false)
+|  |  |  |  |  |  |  pada=(false)
+|  |  |  |  |  |  |  |  pkt=(false)
+|  |  |  |  |  |  |  |  |  ikut=(false)
+|  |  |  |  |  |  |  |  |  |  laku=(false)
+|  |  |  |  |  |  |  |  |  |  |  nikmat=(false)
+|  |  |  |  |  |  |  |  |  |  |  |  mana=(false): SPAM(84.0/12.0)
+|  |  |  |  |  |  |  |  |  |  |  |  mana!=(false): NONSPAM(2.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  nikmat!=(false): NONSPAM(3.0/1.0)
+|  |  |  |  |  |  |  |  |  |  laku!=(false): NONSPAM(3.0/0.0)
+|  |  |  |  |  |  |  |  |  ikut!=(false): NONSPAM(3.0/0.0)
+|  |  |  |  |  |  |  |  pkt!=(false): NONSPAM(3.0/0.0)
+|  |  |  |  |  |  |  pada!=(false): NONSPAM(5.0/1.0)
+|  |  |  |  |  |  d!=(false): NONSPAM(4.0/0.0)
+|  |  |  |  |  tahu!=(false): NONSPAM(4.0/0.0)
+|  |  |  |  paket!=(false): NONSPAM(7.0/2.0)
+|  |  |  lebih!=(false): NONSPAM(6.0/0.0)
+_url_!=(true)
+|  hub=(true)
+|  |  kuota=(false): SPAM(82.0/4.0)
+|  |  kuota!=(false): NONSPAM(3.0/0.0)
+|  hub!=(true)
+|  |  bpkb=(true): SPAM(28.0/0.0)
+|  |  bpkb!=(true)
+|  |  |  an=(true)
+|  |  |  |  info=(false): SPAM(26.0/1.0)
+|  |  |  |  info!=(false): NONSPAM(3.0/0.0)
+|  |  |  an!=(true)
+|  |  |  |  nomor=(true)
+|  |  |  |  |  dulu=(true): SPAM(10.0/0.0)
+|  |  |  |  |  dulu!=(true)
+|  |  |  |  |  |  pulsa=(true): SPAM(9.0/1.0)
+|  |  |  |  |  |  pulsa!=(true)
+|  |  |  |  |  |  |  maaf=(true): SPAM(4.0/0.0)
+|  |  |  |  |  |  |  maaf!=(true)
+|  |  |  |  |  |  |  |  no=(true): SPAM(5.0/1.0)
+|  |  |  |  |  |  |  |  no!=(true)
+|  |  |  |  |  |  |  |  |  minat=(true): SPAM(3.0/1.0)
+|  |  |  |  |  |  |  |  |  minat!=(true): NONSPAM(15.0/2.0)
+|  |  |  |  nomor!=(true)
+|  |  |  |  |  gratis=(true)
+|  |  |  |  |  |  bonus=(false): SPAM(16.0/1.0)
+|  |  |  |  |  |  bonus!=(false): NONSPAM(2.0/0.0)
+|  |  |  |  |  gratis!=(true)
+|  |  |  |  |  |  promo=(true)
+|  |  |  |  |  |  |  paket=(false): SPAM(13.0/0.0)
+|  |  |  |  |  |  |  paket!=(false): NONSPAM(2.0/0.0)
+|  |  |  |  |  |  promo!=(true)
+|  |  |  |  |  |  |  bunga=(true): SPAM(11.0/1.0)
+|  |  |  |  |  |  |  bunga!=(true)
+|  |  |  |  |  |  |  |  rate=(true): SPAM(8.0/0.0)
+|  |  |  |  |  |  |  |  rate!=(true)
+|  |  |  |  |  |  |  |  |  pin=(true): SPAM(7.0/1.0)
+|  |  |  |  |  |  |  |  |  pin!=(true)
+|  |  |  |  |  |  |  |  |  |  bri=(true): SPAM(4.0/0.0)
+|  |  |  |  |  |  |  |  |  |  bri!=(true)
+|  |  |  |  |  |  |  |  |  |  |  langgan=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  di=(false): SPAM(6.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  di!=(false): NONSPAM(2.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  langgan!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  minat=(true): SPAM(4.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  minat!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  cicil=(true): SPAM(4.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  cicil!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  maafuntuk=(true): SPAM(4.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  maafuntuk!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  rekening=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ini=(true): SPAM(7.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ini!=(true): NONSPAM(5.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  rekening!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  rekeningnyabang=(true): SPAM(3.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  rekeningnyabang!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  as=(true): SPAM(3.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  as!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  70=(true): SPAM(3.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  70!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  harga=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  sampai=(false): SPAM(4.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  sampai!=(false): NONSPAM(2.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  harga!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  dana=(true): SPAM(3.0/1.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  dana!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  hanya=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  isi=(false): SPAM(5.0/2.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  isi!=(false): NONSPAM(3.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  hanya!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ioorb=(true): SPAM(2.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  ioorb!=(true)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  sara=(true): SPAM(2.0/0.0)
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  sara!=(true): NONSPAM(412.0/25.0)
+
+Number of Leaf Nodes: 50
+
+Size of the Tree: 99
+
+Time taken to build model: 142.72 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         875               83.4924 %
+Incorrectly Classified Instances       173               16.5076 %
+Kappa statistic                          0.6698
+Mean absolute error                      0.2011
+Root mean squared error                  0.3731
+Relative absolute error                 40.2347 %
+Root relative squared error             74.6399 %
+Total Number of Instances             1048     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.837     0.167      0.829     0.837     0.833      0.873    NONSPAM
+                 0.833     0.163      0.841     0.833     0.837      0.873    SPAM
+Weighted Avg.    0.835     0.165      0.835     0.835     0.835      0.873
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 431  84 |   a = NONSPAM
+  89 444 |   b = SPAM
